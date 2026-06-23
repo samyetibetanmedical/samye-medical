@@ -8,7 +8,11 @@ const SubHeading = ({
   className?: string;
   children: React.ReactNode;
 }) => {
-  return <p className={cn("max-w-3xl mx-auto text-center",className)}>{children}</p>;
+  return (
+    <p className={cn("md:max-w-3xl text-sm md:text-lg mx-auto text-center", className)}>
+      {children}
+    </p>
+  );
 };
 
 export { SubHeading };

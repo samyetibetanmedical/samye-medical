@@ -12,7 +12,9 @@ const LocationCard = ({
   return (
     <div
       className={`border border-gray-300 rounded-2xl p-6 ${
-        featured ? "flex gap-8 items-start" : "flex flex-col"
+        featured
+          ? "flex md:flex-row flex-col gap-8 items-start"
+          : "flex flex-col"
       }`}
     >
       <div className={featured ? "flex-1" : ""}>
@@ -35,18 +37,21 @@ const LocationCard = ({
           </p>
         </div>
       </div>
-
-      <div>{map}</div>
-      {/* <a
-          href={mapLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`border border-gray-300 rounded-2xl flex items-center justify-center font-semibold text-3xl hover:bg-gray-100 transition ${
-            featured ? "w-[420px] h-[220px]" : "w-full h-[160px] mt-6"
-          }`}
-        >
-          Google Maps
-        </a> */}
+      <div
+        className={`overflow-hidden rounded-xl border border-gray-200 ${
+          featured
+            ? "w-full md:w-[450px] h-[260px] shrink-0"
+            : "w-full h-[220px] mt-6"
+        }`}
+      >
+        <iframe
+          src={map}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="w-full h-full border-0"
+        />
+      </div>
     </div>
   );
 };

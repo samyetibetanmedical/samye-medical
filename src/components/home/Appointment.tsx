@@ -138,9 +138,9 @@ const Appointment = () => {
             Choose a convenient time and fill in your details to get started.
           </SubHeading>
 
-          <div className="flex gap-10 mt-8">
+          <div className="flex md:flex-row flex-col gap-10 mt-8">
             {/* Left Side */}
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2">
               <h4 className="font-semibold text-xl mb-4">
                 Choose a Date and Time Slot
               </h4>
@@ -200,7 +200,7 @@ const Appointment = () => {
             </div>
 
             {/* Right Side */}
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2">
               <h4 className="font-semibold text-xl mb-4">Add your Details</h4>
 
               <div className="flex flex-col gap-4">

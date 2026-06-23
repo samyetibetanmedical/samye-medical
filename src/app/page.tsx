@@ -7,7 +7,7 @@ import { Locations } from "@/components/home/Locations";
 
 const page = () => {
   return (
-    <Container>
+    <Container className="px-5">
       <Hero />
       <ClinicalServices />
       <AboutUs />

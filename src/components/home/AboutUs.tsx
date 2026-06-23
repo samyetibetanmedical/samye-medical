@@ -6,8 +6,8 @@ const AboutUs = () => {
   return (
     <Container className="">
       <Heading as="h2">About Us</Heading>
-      <div className="flex gap-5">
-        <div className="w-1/2 space-y-2">
+      <div className="flex md:flex-row flex-col gap-5">
+        <div className="w-full md:w-1/2 text-justify   space-y-2">
           <Heading as={"h3"} className={"text-left"}>
             Foundations of the Traditional Tibetan Medical System
           </Heading>

@@ -16,7 +16,7 @@ const ClinicalServices = () => {
         of Tibetan Medicine.
       </SubHeading>
 
-      <div className="grid grid-cols-3 gap-5 mt-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
         {clinicalServices.slice(0, 6).map((item) => (
           <ServiceCard
             key={item.id}

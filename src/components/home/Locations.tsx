@@ -19,7 +19,7 @@ const Locations = () => {
           Tibetan healing and personalized wellness care.
         </SubHeading>
 
-        <div className="mt-12 space-y-8">
+        <div className="mt-12 space-y-5">
           <LocationCard {...featuredLocation} />
 
           <div className="grid md:grid-cols-3 gap-6">

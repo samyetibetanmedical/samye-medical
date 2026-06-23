@@ -2,25 +2,22 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import {
-  MessageCircle,
-  Star,
-} from "lucide-react";
+import { MessageCircle, Star } from "lucide-react";
 import { Container } from "./Container";
 import { Heading } from "./Heading";
 
 const companyLinks = [
   {
     label: "About Us",
-    href: "#about",
+    href: "/about",
   },
   {
     label: "Services",
-    href: "#services",
+    href: "/services",
   },
   {
     label: "Testimonials",
-    href: "#testimonials",
+    href: "/testimonials",
   },
   {
     label: "Book Appointment",
@@ -65,17 +62,12 @@ const socialLinks = [
 const Footer = () => {
   return (
     <footer className="mt-24">
-      <Container className="bg-primary text-white rounded-t-[2rem] px-10 py-10">
+      <Container className="bg-primary text-white rounded-t-4xl px-10 py-10">
         <div className="grid md:grid-cols-[1.8fr_1fr_1fr_1fr] gap-10">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-4">
-              <Image
-                src="/assets/logo.png"
-                width={70}
-                height={70}
-                alt="Logo"
-              />
+              <Image src="/assets/logo.png" width={70} height={70} alt="Logo" />
 
               <Heading
                 as="h3"
@@ -86,8 +78,8 @@ const Footer = () => {
             </div>
 
             <p className="mt-6 text-lg text-white/90 max-w-md">
-              Ancient Tibetan medicine for modern healing,
-              across four locations.
+              Ancient Tibetan medicine for modern healing, across four
+              locations.
             </p>
 
             <div className="flex gap-4 mt-8">
@@ -109,9 +101,7 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="font-semibold text-3xl mb-5">
-              Company
-            </h4>
+            <h4 className="font-semibold text-3xl mb-5">Company</h4>
 
             <div className="flex flex-col gap-3">
               {companyLinks.map((link) => (
@@ -128,9 +118,7 @@ const Footer = () => {
 
           {/* Connect */}
           <div>
-            <h4 className="font-semibold text-3xl mb-5">
-              Connect
-            </h4>
+            <h4 className="font-semibold text-3xl mb-5">Connect</h4>
 
             <div className="flex flex-col gap-3">
               {connectLinks.map((link) => (
@@ -147,9 +135,7 @@ const Footer = () => {
 
           {/* Reach Us */}
           <div>
-            <h4 className="font-semibold text-3xl mb-5">
-              Reach Us
-            </h4>
+            <h4 className="font-semibold text-3xl mb-5">Reach Us</h4>
 
             <div className="space-y-3">
               <p>4 Clinic Locations</p>
@@ -166,7 +152,10 @@ const Footer = () => {
           </p>
 
           <p className="font-semibold">
-            Designed By Mohan
+            Designed By{" "}
+            <Link href={"https://monxdev.vercel.app/"} className="underline">
+              Mohan
+            </Link>
           </p>
         </div>
       </Container>

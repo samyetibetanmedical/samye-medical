@@ -12,6 +12,6 @@ export interface LocationCardProps {
   address: string;
   contact: string;
   consultation: string;
-  map: React.ReactNode;
+  map: string;
   featured?: boolean;
 }
