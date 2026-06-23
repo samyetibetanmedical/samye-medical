@@ -4,12 +4,13 @@ import { useMemo, useState } from "react";
 import { Container } from "../common/Container";
 import { Heading } from "../common/Heading";
 import { SubHeading } from "../common/SubHeading";
-import { FormInterface } from "@/types/formType";
+import { FormInterface } from "@/types/commonTypes";
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/style.css";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import { generateSlots } from "@/config/common";
+import { toast } from "sonner";
 
 const Appointment = () => {
   const [formData, setFormData] = useState<FormInterface>({
@@ -20,6 +21,7 @@ const Appointment = () => {
     phone: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const allSlots = useMemo(() => generateSlots(), []);
 
@@ -30,8 +32,7 @@ const Appointment = () => {
 
     const today = new Date();
 
-    const isToday =
-      selectedDate.toDateString() === today.toDateString();
+    const isToday = selectedDate.toDateString() === today.toDateString();
 
     if (!isToday) {
       return allSlots;
@@ -66,8 +67,57 @@ const Appointment = () => {
     });
   }, [formData.date, allSlots]);
 
+  const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (
+      !formData.date ||
+      !formData.timeSlot ||
+      !formData.name ||
+      !formData.email ||
+      !formData.phone
+    ) {
+      toast.error("Please fill all required fields");
+      return;
+    }
+
+    try {
+      setLoading(true);
+
+      const response = await fetch("/api/appointment", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast.success("Appointment request sent successfully!");
+
+        setFormData({
+          date: undefined,
+          timeSlot: "",
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        toast.error("Something went wrong");
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to send appointment");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const btnText = loading ? "Scheduling a appointment..." : "Schedule";
   return (
-    <div id="book-appointment">
+    <div id="book-appointment" className="pt-15">
       <Container>
         <Heading as="h2">Schedule an Appointment</Heading>
 
@@ -76,7 +126,10 @@ const Appointment = () => {
           receive personalized guidance for your health and wellness needs.
         </SubHeading>
 
-        <form className="max-w-5xl mx-auto border-2 rounded-xl border-green-200 p-6">
+        <form
+          className="max-w-5xl mt-5 mx-auto border-2 rounded-xl border-green-200 p-6"
+          onSubmit={handleSubmit}
+        >
           <Heading as="h3" className="text-left max-w-none">
             Book a Consultation
           </Heading>
@@ -148,9 +201,7 @@ const Appointment = () => {
 
             {/* Right Side */}
             <div className="w-1/2">
-              <h4 className="font-semibold text-xl mb-4">
-                Add your Details
-              </h4>
+              <h4 className="font-semibold text-xl mb-4">Add your Details</h4>
 
               <div className="flex flex-col gap-4">
                 <input
@@ -190,6 +241,7 @@ const Appointment = () => {
                         phone: value || "",
                       }))
                     }
+                    className="border-none outline-none"
                   />
                 </div>
 
@@ -211,9 +263,10 @@ const Appointment = () => {
 
           <button
             type="submit"
-            className="w-full mt-8 font-semibold text-lg py-3 bg-black text-white rounded-xl hover:opacity-90 transition"
+            disabled={loading}
+            className={`w-full cursor-pointer   mt-8 font-semibold text-lg py-3  ${loading ? "bg-neutral-700 " : "bg-black"} text-white rounded-xl hover:opacity-90 transition`}
           >
-            Schedule Appointment
+            {btnText}
           </button>
         </form>
       </Container>

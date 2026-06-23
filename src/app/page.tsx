@@ -1,8 +1,9 @@
-import { Container } from '@/components/common/Container'
-import { AboutUs } from '@/components/home/AboutUs'
-import { Appointment } from '@/components/home/Appointment'
-import { ClinicalServices } from '@/components/home/ClinicalServices'
-import { Hero } from '@/components/home/Hero'
+import { Container } from "@/components/common/Container";
+import { AboutUs } from "@/components/home/AboutUs";
+import { Appointment } from "@/components/home/Appointment";
+import { ClinicalServices } from "@/components/home/ClinicalServices";
+import { Hero } from "@/components/home/Hero";
+import { Locations } from "@/components/home/Locations";
 
 const page = () => {
   return (
@@ -11,11 +12,9 @@ const page = () => {
       <ClinicalServices />
       <AboutUs />
       <Appointment />
-      <div className='h-screen'>
-
-      </div>
+      <Locations />
     </Container>
-  )
-}
+  );
+};
 
-export default page
+export default page;
