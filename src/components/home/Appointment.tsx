@@ -130,11 +130,11 @@ const Appointment = () => {
           className="max-w-5xl mt-5 mx-auto border-2 rounded-xl border-green-200 p-6"
           onSubmit={handleSubmit}
         >
-          <Heading as="h3" className="text-left max-w-none">
+          <Heading as="h3" className="text-left max-w-none mx-0">
             Book a Consultation
           </Heading>
 
-          <SubHeading className="text-left max-w-none">
+          <SubHeading className="text-left max-w-none mx-0">
             Choose a convenient time and fill in your details to get started.
           </SubHeading>
 

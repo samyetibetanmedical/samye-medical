@@ -153,7 +153,7 @@ const Footer = () => {
 
           <p className="font-semibold">
             Designed By{" "}
-            <Link href={"https://monxdev.vercel.app/"} className="underline">
+            <Link href={"https://monxdev.vercel.app/"} target="_blank" className="underline">
               Mohan
             </Link>
           </p>

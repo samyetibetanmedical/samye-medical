@@ -1,11 +1,14 @@
-import React from 'react'
+import { Hero } from "@/components/about/Hero";
+import { OurCenters } from "@/components/about/OurCenters";
+import { Container } from "@/components/common/Container";
 
 const page = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <Container>
+      <Hero />
+      <OurCenters />
+    </Container>
+  );
+};
 
-export default page
+export default page;

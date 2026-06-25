@@ -46,7 +46,8 @@ export const locations = [
   },
   {
     state: "Delhi",
-    address: "house no 7, Block J, opposite F Block, Block F, Rajouri Garden, Delhi, 110027",
+    address:
+      "house no 7, Block J, opposite F Block, Block F, Rajouri Garden, Delhi, 110027",
     contact: "+91 9217756674, +91 9211424104",
     consultation: "Monday to Sunday, Closed Wednesday",
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.504972770728!2d77.123193!3d28.644595000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03001bbfcd39%3A0x89ce02d6723ebbe!2sSamye%20Tibetan%20Traditional%20Medical%20Centre!5e0!3m2!1sen!2sin!4v1782227698091!5m2!1sen!2sin",
@@ -60,9 +61,42 @@ export const locations = [
   },
   {
     state: "Arunachal Pradesh",
-    address: "5/1, near post office, area, Banderdawa, Arunachal Pradesh 791123",
+    address:
+      "5/1, near post office, area, Banderdawa, Arunachal Pradesh 791123",
     contact: "+91 9217756674, +91 9211424104",
     consultation: "Monday to Sunday, Closed Wednesday",
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.510645209526!2d93.8242643!3d27.1087217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3746aba9d47fce0b%3A0x22fad227ccd52ab0!2sSamye%20Tibetan%20Traditional%20Medical%20Treatment%20Centre!5e0!3m2!1sen!2sin!4v1782227761132!5m2!1sen!2sin",
   },
+];
+
+export const doctors = [
+  { id: 1, docName: "Dr. Lhamo Dolma (BSRMS)", imgSrc: "/assets/doc-1.jpeg" },
+  { id: 2, docName: "Dr. Shawo (BSRMS)", imgSrc: "/assets/doc-5.avif" },
+  {
+    id: 3,
+    docName: "Dr. Rinzin Tsewang. (BSRMS)",
+    imgSrc: "/assets/doc-4.jpeg",
+  },
+  { id: 4, docName: "Dr. Dorje Dakpa (BSRMS)", imgSrc: "/assets/doc-6.avif" },
+  { id: 5, docName: "Dr. Prema Wangmo (BSRMS)", imgSrc: "/assets/doc-3.jpeg" },
+  {
+    id: 6,
+    docName: "Dr. Thupten Rabgyal (BSRSMS)",
+    imgSrc: "/assets/doc-2.avif",
+  },
+  { id: 7, docName: "Dr. Jigme Chokey (BSRSMS)", imgSrc: "/assets/doc-7.jpeg" },
+  {
+    id: 8,
+    docName: "Dr. Rinchen Dhondup (BSRSMS)",
+    imgSrc: "/assets/doc-8.jpeg",
+  },
+];
+
+export const medicalCamps = [
+  "/assets/camp-1.jpeg",
+  "/assets/camp-3.jpeg",
+  "/assets/camp-5.jpeg",
+  "/assets/camp-4.jpeg",
+  "/assets/camp-6.jpeg",
+  "/assets/camp-2.jpeg",
 ];
