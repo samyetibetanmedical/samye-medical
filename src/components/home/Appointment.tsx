@@ -118,10 +118,10 @@ const Appointment = () => {
   const btnText = loading ? "Scheduling a appointment..." : "Schedule";
   return (
     <div id="book-appointment" className="pt-15">
-      <Container>
+      <Container className="px-5">
         <Heading as="h2">Schedule an Appointment</Heading>
 
-        <SubHeading>
+        <SubHeading className="mt-3">
           Connect with our experienced Tibetan medicine practitioners and
           receive personalized guidance for your health and wellness needs.
         </SubHeading>
@@ -264,7 +264,7 @@ const Appointment = () => {
           <button
             type="submit"
             disabled={loading}
-            className={`w-full cursor-pointer   mt-8 font-semibold text-lg py-3  ${loading ? "bg-neutral-700 " : "bg-black"} text-white rounded-xl hover:opacity-90 transition`}
+            className={`w-full cursor-pointer   mt-8 font-semibold text-lg py-3  ${loading ? "bg-neutral-800 " : "bg-black"} text-white rounded-xl hover:opacity-90 transition`}
           >
             {btnText}
           </button>

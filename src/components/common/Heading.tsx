@@ -13,7 +13,7 @@ const Heading = ({
   return (
     <Tag
       className={cn(
-        `font-semibold ${as === "h1" ? "text-3xl md:text-5xl" : as === "h2" ? "text-2xl md:text-4xl" : "text-xl md:text-3xl"} mx-auto text-center md:max-w-3xl`,
+        `font-semibold ${as === "h1" ? "text-3xl md:text-5xl" : as === "h2" ? "text-2xl md:text-4xl" : "text-xl md:text-3xl"} mx-auto text-center md:max-w-3xl font-heading`,
         className,
       )}
     >

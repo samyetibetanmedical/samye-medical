@@ -32,7 +32,7 @@ const LocationCard = ({
           </p>
 
           <p>
-            <span className="font-semibold">Consultation Hours:</span>{" "}
+            <span className="font-semibold">Consultation Days:</span>{" "}
             {consultation}
           </p>
         </div>

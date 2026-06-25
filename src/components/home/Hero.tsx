@@ -19,7 +19,7 @@ const Hero = () => {
           <a href="#book-appointment">Book Appointment</a>
         </button>
         <button className="bg-white text-primary px-3 py-1 text-lg rounded-lg border border-primary font-semibold">
-          <a href="#book-appointment">Contact Us</a>
+          <a href="#footer">Contact Us</a>
         </button>
       </div>
 

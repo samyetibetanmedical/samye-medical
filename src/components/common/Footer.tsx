@@ -5,6 +5,7 @@ import Link from "next/link";
 import { MessageCircle, Star } from "lucide-react";
 import { Container } from "./Container";
 import { Heading } from "./Heading";
+import { FaFacebookF, FaInstagram, FaGoogle } from "react-icons/fa";
 
 const companyLinks = [
   {
@@ -25,43 +26,39 @@ const companyLinks = [
   },
 ];
 
-const connectLinks = [
-  {
-    label: "Google Reviews",
-    href: "#",
-  },
-  {
-    label: "Locations",
-    href: "#locations",
-  },
-  {
-    label: "Contact",
-    href: "#contact",
-  },
-];
+// const connectLinks = [
+//   {
+//     label: "Google Reviews",
+//     href: "https://share.google/Yi978CytSo3DjjKSh",
+//   },
+//   {
+//     label: "Locations",
+//     href: "#locations",
+//   },
+//   {
+//     label: "Contact",
+//     href: "#contact",
+//   },
+// ];
 
 const socialLinks = [
-  // {
-  //   icon: Facebook,
-  //   href: "#",
-  // },
-  // {
-  //   icon: Instagram,
-  //   href: "#",
-  // },
   {
-    icon: MessageCircle,
-    href: "#",
+    icon: FaFacebookF,
+    href: "https://www.facebook.com/sttmtcsamye",
   },
   {
-    icon: Star,
-    href: "#",
+    icon: FaInstagram,
+    href: "https://www.instagram.com/sttmt_centre",
+  },
+  {
+    icon: FaGoogle,
+    href: "https://share.google/Yi978CytSo3DjjKSh",
   },
 ];
 
 const Footer = () => {
   return (
-    <footer className="mt-24">
+    <footer className="mt-24" id="footer">
       <Container className="bg-primary text-white rounded-t-4xl px-10 py-10">
         <div className="grid md:grid-cols-[1.8fr_1fr_1fr_1fr] gap-10">
           {/* Brand */}
@@ -117,7 +114,7 @@ const Footer = () => {
           </div>
 
           {/* Connect */}
-          <div>
+          {/* <div>
             <h4 className="font-semibold text-3xl mb-5">Connect</h4>
 
             <div className="flex flex-col gap-3">
@@ -131,7 +128,7 @@ const Footer = () => {
                 </Link>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Reach Us */}
           <div>
@@ -140,7 +137,9 @@ const Footer = () => {
             <div className="space-y-3">
               <p>4 Clinic Locations</p>
               <p>9343XXXXXX</p>
-              <p>info@samyemedical.com</p>
+              <Link href="mailto:info@samyemedical.com">
+                info@samyemedical.com
+              </Link>
             </div>
           </div>
         </div>
@@ -153,7 +152,11 @@ const Footer = () => {
 
           <p className="font-semibold">
             Designed By{" "}
-            <Link href={"https://monxdev.vercel.app/"} target="_blank" className="underline">
+            <Link
+              href={"https://monxdev.vercel.app/"}
+              target="_blank"
+              className="underline"
+            >
               Mohan
             </Link>
           </p>

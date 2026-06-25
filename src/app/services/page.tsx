@@ -3,6 +3,7 @@ import { Heading } from "@/components/common/Heading";
 import { clinicalServices } from "@/config/clinicalServices";
 import { ServiceCard } from "@/components/common/ServiceCard";
 import { SubHeading } from "@/components/common/SubHeading";
+import { Appointment } from "@/components/home/Appointment";
 
 const page = () => {
   return (
@@ -22,6 +23,8 @@ const page = () => {
           />
         ))}
       </div>
+
+      <Appointment />
     </Container>
   );
 };
