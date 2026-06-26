@@ -264,7 +264,7 @@ const Appointment = () => {
           <button
             type="submit"
             disabled={loading}
-            className={`w-full cursor-pointer   mt-8 font-semibold text-lg py-3  ${loading ? "bg-neutral-800 " : "bg-black"} text-white rounded-xl hover:opacity-90 transition`}
+            className={`w-full cursor-pointer   mt-8 font-semibold text-lg py-3  ${loading ? "bg-neutral-900 " : "bg-black"} text-white rounded-xl hover:opacity-90 transition`}
           >
             {btnText}
           </button>

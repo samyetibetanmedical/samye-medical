@@ -136,9 +136,9 @@ const Footer = () => {
 
             <div className="space-y-3">
               <p>4 Clinic Locations</p>
-              <p>9343XXXXXX</p>
-              <Link href="mailto:info@samyemedical.com">
-                info@samyemedical.com
+              {/* <p>9343XXXXXX</p> */}
+              <Link href="mailto:samyetibetanmedical@gmail.com">
+                samyetibetanmedical@gmail.com
               </Link>
             </div>
           </div>

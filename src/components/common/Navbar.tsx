@@ -23,7 +23,7 @@ const Navbar = () => {
             <ul className="flex gap-6 items-center text-white font-medium">
               {navItems.map((item) => (
                 <li key={item.id}>
-                  <Link href={item.link}>{item.title}</Link>
+                  <Link href={item.link} className="hover:underline underline-offset-2">{item.title}</Link>
                 </li>
               ))}
             </ul>

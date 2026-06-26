@@ -4,6 +4,13 @@ import { clinicalServices } from "@/config/clinicalServices";
 import { ServiceCard } from "@/components/common/ServiceCard";
 import { SubHeading } from "@/components/common/SubHeading";
 import { Appointment } from "@/components/home/Appointment";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Clinical Services",
+  description:
+    "Explore our Tibetan medicine treatments and holistic healthcare services.",
+};
 
 const page = () => {
   return (

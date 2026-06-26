@@ -4,6 +4,9 @@ import "./globals.css";
 import { Navbar } from "@/components/common/Navbar";
 import { Toaster } from "sonner";
 import { Footer } from "@/components/common/Footer";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import UmamiAnalytics from "@/components/analytics/UmamiAnalytics";
 
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-ibm-plex-sans",
@@ -19,7 +22,7 @@ const ibmPlexSerif = IBM_Plex_Serif({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_URL || "https://samyemedical.com"
+    process.env.NEXT_PUBLIC_URL || "https://samyemedical.com",
   ),
   alternates: {
     canonical: "https://samyemedical.com",
@@ -76,8 +79,12 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col font-sans">
         <Navbar />
+
         <main>{children}</main>
         <Footer />
+        <Analytics />
+        <UmamiAnalytics />
+        <SpeedInsights />
         <Toaster richColors position="top-right" />
       </body>
     </html>
