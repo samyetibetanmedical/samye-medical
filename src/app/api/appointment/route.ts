@@ -15,13 +15,19 @@ export async function POST(req: Request) {
       },
     });
 
+    const formattedDate = new Date(date).toLocaleDateString("en-IN", {
+      day: "numeric",
+      month: "long",
+      year: "numeric"
+    })
+
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: email,
       subject: "Appointment Request Received",
       html: `
         <h2>Thank you for contacting us</h2>
-        <p>We have received your appointment request for ${timeSlot}.</p>
+        <p>We have received your appointment request for ${formattedDate} at ${timeSlot}.</p>
         <p>Our team will contact you shortly.</p>
       `,
     });

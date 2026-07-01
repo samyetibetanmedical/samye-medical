@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = "https://samyemedical.com";
+  const baseUrl = "https://samyetibetanmedical.com";
 
   const routes = ["", "/services", "/testimonials", "/about"];
 

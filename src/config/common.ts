@@ -101,14 +101,51 @@ export const medicalCamps = [
   "/assets/camp-2.jpeg",
 ];
 
-
-  export const testimonials = [
-    { id: 1, videoSrc: "" , description: "Mr. Om Hari, a chronic stroke survivor, endured years of conventional treatment with limited success and adverse secondary effects, including renal calculi. Following two months of integrative care at Samye Tibetan Medical Center, he has achieved remarkable clinical improvement in both neurological and renal health. He now advocates for the Sowa Rigpa holistic system."},
-    { id: 2, videoSrc: "" , description: "Mr. Joram Tupan, a resident of Arunachal Pradesh, utilized our specialized tele-consultation services prior to the establishment of our local branch in 2024. Presenting with Type 2 Diabetes, hyperuricemia, and respiratory distress, he experienced a complete resolution of symptoms through our personalized herbal protocols. His success underscores the vital importance of adhering to the specialized dietary regimens prescribed by our resident Amchi."},
-    { id: 3, videoSrc: "" , description: "A patient from Guwahati, Assam, sought intervention for chronic neurological dysfunction and persistent fatigue. Having found no relief in conventional allopathic medicine, she underwent a comprehensive treatment plan at our center involving Sowa Rigpa herbal science, acupuncture, and cupping therapy. Within thirty days, she reported an eighty percent restoration of her health and continues her recovery under our care."},
-    { id: 4, videoSrc: "" , description: "We are honored to support a father and daughter from Guwahati, Assam. The daughter sought treatment for severe hypertension and diabetes, while the father required hepatic support. Following a structured multi-week therapeutic intervention at Samye Tibetan Medical Center, both patients have demonstrated significant clinical stabilization and rapid physiological improvement."},
-    { id: 5, videoSrc: "" , description: "The recovery of Manish Kumar from Palam, Delhi, represents a profound clinical milestone. Diagnosed with advanced malignant brain cancer and experiencing paralysis, he was given a grave prognosis by traditional hospitals. After initiating treatment at our Delhi center, he regained motor function within one week. He has transitioned from total dependency to performing daily tasks independently."},
-    { id: 6, videoSrc: "" , description: "A couple from Udalguri, Assam, sought treatment for chronic metabolic and cardiovascular imbalances. Under the expert clinical guidance of our practitioners, both have successfully managed their blood pressure and glycemic levels using our proprietary herbal formulations, which provide therapeutic benefits without the risk of adverse pharmacological side effects."},
-    { id: 7, videoSrc: "" , description: "A resident of Jagir Road, Assam, presented at our Guwahati facility with chronic gastritis and Irritable Bowel Syndrome. Following a thirty-day course of traditional Tibetan herbal therapeutics, she has observed a substantial reduction in gastrointestinal symptoms and an overall improvement in her metabolic well-being."},
-    { id: 8, videoSrc: "" , description: "The son of a long-term patient testifies to his mother's recovery from debilitating spinal pathologies that persisted for seven years despite diverse medical interventions. After transitioning to our Guwahati center, she achieved an eighty percent improvement in spinal mobility and comfort within one month, continuing her rehabilitation with our dedicated medical team."},
-  ]
+export const testimonials = [
+  {
+    id: 1,
+    videoSrc: "/testimonials/testimonial_13.mp4",
+    disease: "Paralysis|Chronic Kidney Disease",
+  },
+  { id: 2, videoSrc: "/testimonials/testimonial_1.mp4", disease: "Piles" },
+  { id: 3, videoSrc: "/testimonials/testimonial_2.mp4", disease: "Sciatica" },
+  { id: 4, videoSrc: "/testimonials/testimonial_3.mp4", disease: "Diabetes" },
+  {
+    id: 5,
+    videoSrc: "/testimonials/testimonial_4.mp4",
+    disease: "Brain Injury| Hemiparesis ",
+  },
+  { id: 6, videoSrc: "/testimonials/testimonial_5.mp4", disease: "Gastric" },
+  {
+    id: 7,
+    videoSrc: "/testimonials/testimonial_6.mp4",
+    disease: "Fatigue and Sciatica",
+  },
+  {
+    id: 8,
+    videoSrc: "/testimonials/testimonial_7.mp4",
+    disease: "Spinal Cord",
+  },
+  {
+    id: 11,
+    videoSrc: "/testimonials/testimonial_10.mp4",
+    disease: "Migraine ",
+  },
+  {
+    id: 10,
+    videoSrc: "/testimonials/testimonial_9.mp4",
+    disease: "High Blood pressure and Diabetes(daughter) (Father) Liver ",
+  },
+  { id: 12, videoSrc: "/testimonials/testimonial_11.mp4", disease: "Diabetes" },
+  {
+    id: 13,
+    videoSrc: "/testimonials/testimonial_12.mp4",
+    disease: "Uric Acid, Thyroud and Diabetes",
+  },
+  {
+    id: 9,
+    videoSrc: "/testimonials/testimonial_8.mp4",
+    disease:
+      "Diabetes, Uric Acid, Heaviness around chest, difficulty breathing",
+  },
+];

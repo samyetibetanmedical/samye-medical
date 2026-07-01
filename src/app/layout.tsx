@@ -22,10 +22,10 @@ const ibmPlexSerif = IBM_Plex_Serif({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_URL || "https://samyemedical.com",
+    process.env.NEXT_PUBLIC_URL || "https://samyetibetanmedical.com",
   ),
   alternates: {
-    canonical: "https://samyemedical.com",
+    canonical: "https://samyetibetanmedical.com",
   },
   title: {
     default: "Samye Tibetan Medical Treatment Centre",
@@ -36,17 +36,17 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    url: "https://samyemedical.com/",
+    url: "https://samyetibetanmedical.com/",
     title: "Samye Tibetan Medical Treatment Centre",
     description:
       "Samye Tibetan Medical Treatment Centers utilize the profound expertise of ancient Tibetan healing traditions to address comprehensive health challenges and human wellness.",
     siteName: "Samye Tibetan Medical Treatment Centre",
     images: [
       {
-        url: "https://samyemedical.com/meta/opengraph-img.png",
+        url: "https://samyetibetanmedical.com/meta/opengraph-img.png",
         width: 1200,
         height: 630,
-        alt: "Samye Medical's Preview",
+        alt: "Samye Tibetan Medical's Preview",
       },
     ],
   },
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title: "Samye Tibetan Medical Treatment Centre",
     description:
       "Samye Tibetan Medical Treatment Centers utilize the profound expertise of ancient Tibetan healing traditions to address comprehensive health challenges and human wellness.",
-    images: ["https://samyemedical.com/meta/opengraph-img.png"],
+    images: ["https://samyetibetanmedical.com/meta/opengraph-img.png"],
     creator: "@_igmoni",
   },
 

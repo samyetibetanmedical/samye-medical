@@ -7,6 +7,6 @@ export default function robots() {
         disallow: [],
       },
     ],
-    sitemap: "https://samyemedical.com/sitemap.xml",
+    sitemap: "https://samyetibetanmedical.com/sitemap.xml",
   };
 }

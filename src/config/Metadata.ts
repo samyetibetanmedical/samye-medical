@@ -5,8 +5,9 @@ export const siteConfig = {
   title: "Samye Tibetan Medical Centre",
   description:
     "Ancient Tibetan medicine for modern healing through the Sowa Rigpa tradition.",
-  url: process.env.NEXT_PUBLIC_API_URL || "https://samyemedical.com",
-  ogImage: "/assets/meta/opengraph.png",
+  url:
+    process.env.NEXT_PUBLIC_API_URL || "https://www.samyetibetanmedical.com/",
+  ogImage: "/assets/meta/opengraph-img.png",
   author: "Samye Tibetan Medical Centre",
 };
 

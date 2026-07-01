@@ -8,7 +8,7 @@ const ServiceCard = ({
   description: string;
 }) => {
   return (
-    <div className=" flex flex-col border-2 gap-3  rounded-xl border-green-200 p-3">
+    <div className="flex flex-col border-2 gap-3  rounded-xl border-green-200  transition-all duration-200 hover:-translate-y-1 hover:shadow-lg p-3">
       <div className="size-10 bg-green-200 rounded-lg items-center justify-center flex">
         <Icon className="size-6" />
       </div>

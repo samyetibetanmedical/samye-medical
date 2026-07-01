@@ -64,7 +64,12 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-4">
-              <Image src="/assets/logo.png" width={70} height={70} alt="Logo" />
+              <Image
+                src="/assets/logo.avif"
+                width={70}
+                height={70}
+                alt="Logo"
+              />
 
               <Heading
                 as="h3"
@@ -113,31 +118,25 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Connect */}
-          {/* <div>
-            <h4 className="font-semibold text-3xl mb-5">Connect</h4>
-
-            <div className="flex flex-col gap-3">
-              {connectLinks.map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="hover:text-white/80 transition"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </div> */}
-
           {/* Reach Us */}
           <div>
             <h4 className="font-semibold text-3xl mb-5">Reach Us</h4>
 
             <div className="space-y-3">
-              <p>4 Clinic Locations</p>
-              {/* <p>9343XXXXXX</p> */}
-              <Link href="mailto:samyetibetanmedical@gmail.com">
+              <p>
+                <Link
+                  href="#locations"
+                  className="hover:underline underline-offset-2 transition duration-200"
+                >
+                  4 Clinic Locations
+                </Link>
+              </p>
+              <Link
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=samyetibetanmedical@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline underline-offset-2 transition duration-200"
+              >
                 samyetibetanmedical@gmail.com
               </Link>
             </div>

@@ -118,7 +118,7 @@ const Appointment = () => {
   const btnText = loading ? "Scheduling a appointment..." : "Schedule";
   return (
     <div id="book-appointment" className="pt-15">
-      <Container className="px-5">
+      <Container className="md:px-5">
         <Heading as="h2">Schedule an Appointment</Heading>
 
         <SubHeading className="mt-3">

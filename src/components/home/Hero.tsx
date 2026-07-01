@@ -15,17 +15,17 @@ const Hero = () => {
         challenges and human wellness.
       </SubHeading>
       <div className="flex items-center gap-5 justify-center mt-5">
-        <button className="bg-primary text-white px-3 py-1 text-lg rounded-lg  font-semibold">
+        <button className="bg-primary text-white px-3 py-1 text-lg rounded-lg  font-semibold hover:opacity-90  hover:scale-105 transition-all duration-200 active:scale-95">
           <a href="#book-appointment">Book Appointment</a>
         </button>
-        <button className="bg-white text-primary px-3 py-1 text-lg rounded-lg border border-primary font-semibold">
+        <button className="bg-white text-primary px-3 py-1 text-lg rounded-lg border border-primary font-semibold hover:opacity-90  hover:scale-105 transition-all duration-200 active:scale-95">
           <a href="#footer">Contact Us</a>
         </button>
       </div>
 
       <div className="flex items-center justify-center mx-auto ">
         <Image
-          src={"/assets/hero.png"}
+          src={"/assets/hero.avif"}
           alt="Hero Image"
           width={1200}
           height={800}

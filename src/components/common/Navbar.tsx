@@ -14,8 +14,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto bg-primary rounded-xl px-4 py-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/">
-            <Image src="/assets/logo.png" alt="Logo" width={50} height={50} />
+          <Link href="/" className={"rounded-full size-[50px] overflow-hidden"}>
+            <Image src="/assets/logo.avif" alt="Logo" width={50} height={50} />
           </Link>
 
           {/* Desktop Menu */}
@@ -23,17 +23,26 @@ const Navbar = () => {
             <ul className="flex gap-6 items-center text-white font-medium">
               {navItems.map((item) => (
                 <li key={item.id}>
-                  <Link href={item.link} className="hover:underline underline-offset-2">{item.title}</Link>
+                  <Link
+                    href={item.link}
+                    className="hover:underline underline-offset-2"
+                  >
+                    {item.title}
+                  </Link>
                 </li>
               ))}
             </ul>
 
             <a
               href="/#book-appointment"
-              className="bg-white text-primary px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition"
+              className="bg-white text-primary px-4 py-2 rounded-lg font-semibold hover:opacity-90  hover:scale-105 transition-all duration-200 active:scale-95"
             >
               Book Appointment
             </a>
+
+            <button className="bg-primary text-white px-3 py-1 text-lg rounded-lg border border-white hover:scale-105 active:scale-95 transition-all duration-200 font-semibold">
+              <a href="#footer">Contact Us</a>
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -65,6 +74,10 @@ const Navbar = () => {
             >
               Book Appointment
             </a>
+
+            <button className="bg-white text-primary px-3 py-1 text-lg rounded-lg border border-primary font-semibold">
+              <a href="#footer">Contact Us</a>
+            </button>
           </div>
         )}
       </div>
