@@ -66,18 +66,19 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+            <div className="flex flex-col gap-2">
+              <a
+                href="#book-appointment"
+                onClick={() => setIsOpen(false)}
+                className="mt-5 block w-full text-center bg-white text-primary px-4 py-2 rounded-lg font-semibold"
+              >
+                Book Appointment
+              </a>
 
-            <a
-              href="#book-appointment"
-              onClick={() => setIsOpen(false)}
-              className="mt-5 block w-full text-center bg-white text-primary px-4 py-2 rounded-lg font-semibold"
-            >
-              Book Appointment
-            </a>
-
-            <button className="bg-white text-primary px-3 py-1 text-lg rounded-lg border border-primary font-semibold">
-              <a href="#footer">Contact Us</a>
-            </button>
+              <button className="bg-white text-primary px-3 py-1 text-lg rounded-lg border border-primary font-semibold">
+                <a href="#footer">Contact Us</a>
+              </button>
+            </div>
           </div>
         )}
       </div>
