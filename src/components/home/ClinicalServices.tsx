@@ -27,7 +27,7 @@ const ClinicalServices = () => {
         ))}
       </div>
       <div className="flex justify-center">
-        <button className="bg-white text-primary px-3 py-1 text-lg rounded-lg border border-primary font-semibold">
+        <button className="bg-white text-primary px-3 py-1 text-lg rounded-lg border border-primary font-semibold hover:scale-105 active:scale-95 transition-all duration-200 hover:bg-primary hover:text-white">
           <Link href="/services">Show All Services</Link>
         </button>
       </div>

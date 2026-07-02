@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { MessageCircle, Star } from "lucide-react";
 import { Container } from "./Container";
 import { Heading } from "./Heading";
 import { FaFacebookF, FaInstagram, FaGoogle } from "react-icons/fa";
+import { scrollTo } from "@/lib/scroll";
 
 const companyLinks = [
   {
@@ -25,21 +25,6 @@ const companyLinks = [
     href: "#book-appointment",
   },
 ];
-
-// const connectLinks = [
-//   {
-//     label: "Google Reviews",
-//     href: "https://share.google/Yi978CytSo3DjjKSh",
-//   },
-//   {
-//     label: "Locations",
-//     href: "#locations",
-//   },
-//   {
-//     label: "Contact",
-//     href: "#contact",
-//   },
-// ];
 
 const socialLinks = [
   {
@@ -80,8 +65,7 @@ const Footer = () => {
             </div>
 
             <p className="mt-6 text-lg text-white/90 max-w-md">
-              Ancient Tibetan medicine for modern healing, across four
-              locations.
+              Ancient Tibetan medicine for modern healing, across India.
             </p>
 
             <div className="flex gap-4 mt-8">
@@ -110,7 +94,7 @@ const Footer = () => {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="hover:text-white/80 transition"
+                  className="hover:text-white/80 transition cursor-pointer"
                 >
                   {link.label}
                 </Link>
@@ -124,18 +108,18 @@ const Footer = () => {
 
             <div className="space-y-3">
               <p>
-                <Link
-                  href="#locations"
-                  className="hover:underline underline-offset-2 transition duration-200"
+                <button
+                  onClick={() => scrollTo("locations")}
+                  className="hover:underline underline-offset-2 transition duration-200 cursor-pointer"
                 >
                   4 Clinic Locations
-                </Link>
+                </button>
               </p>
               <Link
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=samyetibetanmedical@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline underline-offset-2 transition duration-200"
+                className="hover:underline underline-offset-2 transition duration-200 cursor-pointer"
               >
                 samyetibetanmedical@gmail.com
               </Link>
@@ -154,7 +138,7 @@ const Footer = () => {
             <Link
               href={"https://monxdev.vercel.app/"}
               target="_blank"
-              className="underline"
+              className="underline cursor-pointer"
             >
               Mohan
             </Link>

@@ -1,6 +1,7 @@
 import { Hero } from "@/components/about/Hero";
 import { OurCenters } from "@/components/about/OurCenters";
 import { Container } from "@/components/common/Container";
+import { Appointment } from "@/components/home/Appointment";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,6 +15,7 @@ const page = () => {
     <Container>
       <Hero />
       <OurCenters />
+      <Appointment />
     </Container>
   );
 };

@@ -5,6 +5,7 @@ import { navItems } from "@/config/common";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { scrollTo } from "@/lib/scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,15 +34,18 @@ const Navbar = () => {
               ))}
             </ul>
 
-            <a
-              href="/#book-appointment"
-              className="bg-white text-primary px-4 py-2 rounded-lg font-semibold hover:opacity-90  hover:scale-105 transition-all duration-200 active:scale-95"
+            <button
+              onClick={() => scrollTo("book-appointment")}
+              className="bg-white text-primary px-4 py-2 rounded-lg font-semibold hover:opacity-90 cursor-pointer  hover:scale-105 transition-all duration-200 active:scale-95"
             >
               Book Appointment
-            </a>
+            </button>
 
-            <button className="bg-primary text-white px-3 py-1 text-lg rounded-lg border border-white hover:scale-105 active:scale-95 transition-all duration-200 font-semibold">
-              <a href="#footer">Contact Us</a>
+            <button
+              onClick={() => scrollTo("footer")}
+              className="bg-primary text-white px-3 py-1 text-lg rounded-lg border border-white hover:scale-105 active:scale-95 transition-all duration-200 font-semibold cursor-pointer"
+            >
+              Contact Us
             </button>
           </div>
 

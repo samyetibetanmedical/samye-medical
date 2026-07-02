@@ -1,7 +1,9 @@
+'use client'
 import { Container } from "../common/Container";
 import { Heading } from "../common/Heading";
 import { SubHeading } from "../common/SubHeading";
 import Image from "next/image";
+import { scrollTo } from "@/lib/scroll";
 
 const Hero = () => {
   return (
@@ -15,11 +17,17 @@ const Hero = () => {
         challenges and human wellness.
       </SubHeading>
       <div className="flex items-center gap-5 justify-center mt-5">
-        <button className="bg-primary text-white px-3 py-1 text-lg rounded-lg  font-semibold hover:opacity-90  hover:scale-105 transition-all duration-200 active:scale-95">
-          <a href="#book-appointment">Book Appointment</a>
+        <button
+          className="bg-primary text-white px-3 py-1 text-lg rounded-lg  font-semibold hover:opacity-90 cursor-pointer  hover:scale-105 transition-all duration-200 active:scale-95"
+          onClick={() => scrollTo("book-appointment")}
+        >
+          Book Appointment
         </button>
-        <button className="bg-white text-primary px-3 py-1 text-lg rounded-lg border border-primary font-semibold hover:opacity-90  hover:scale-105 transition-all duration-200 active:scale-95">
-          <a href="#footer">Contact Us</a>
+        <button
+          className="bg-white text-primary px-3 py-1 text-lg rounded-lg border border-primary font-semibold hover:opacity-90 cursor-pointer hover:scale-105 transition-all duration-200 active:scale-95"
+          onClick={() => scrollTo("footer")}
+        >
+          Contact Us
         </button>
       </div>
 
