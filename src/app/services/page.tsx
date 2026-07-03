@@ -26,7 +26,7 @@ const page = () => {
             key={item.id}
             icon={item.icon}
             title={item.title}
-            description={item.description}
+            diseases={item.diseases}
           />
         ))}
       </div>
