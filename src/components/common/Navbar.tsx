@@ -79,7 +79,10 @@ const Navbar = () => {
                 Book Appointment
               </a>
 
-              <button className="bg-white text-primary px-3 py-1 text-lg rounded-lg border border-primary font-semibold">
+              <button
+                onClick={() => setIsOpen(false)}
+                className="bg-white text-primary px-3 py-1 text-lg rounded-lg border border-primary font-semibold"
+              >
                 <a href="#footer">Contact Us</a>
               </button>
             </div>
