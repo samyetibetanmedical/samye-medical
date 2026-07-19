@@ -7,11 +7,6 @@ import { SubHeading } from "../common/SubHeading";
 import Link from "next/link";
 
 const ClinicalServices = () => {
-
-  clinicalServices.map((item) => {
-    console.log(item.title, item.diseases)
-})
-
   return (
     <Container className="space-y-3">
       <Heading as="h2">Clinical Services</Heading>

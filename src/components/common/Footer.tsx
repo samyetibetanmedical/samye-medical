@@ -94,7 +94,7 @@ const Footer = () => {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="hover:text-white/80 transition cursor-pointer"
+                  className="hover:text-white/80 hover:underline underline-offset-2 transition cursor-pointer"
                 >
                   {link.label}
                 </Link>
@@ -134,11 +134,11 @@ const Footer = () => {
           </p>
 
           <p className="font-semibold">
-            Designed By{" "}
+            Designed & Developed By{" "}
             <Link
               href={"https://monxdev.vercel.app/"}
               target="_blank"
-              className="underline cursor-pointer"
+              className="underline cursor-pointer hover:text-green-500"
             >
               Mohan
             </Link>
