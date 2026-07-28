@@ -47,7 +47,7 @@ export const locations = [
   {
     state: "Delhi",
     address:
-      "house no 7, Block J, opposite F Block, Block F, Rajouri Garden, Delhi, 110027",
+      "house no 7, Block J, opposite F Block, Rajouri Garden, Delhi, 110027",
     contact: "+91 9217756674, +91 9211424104",
     consultation: "Monday to Sunday, Closed Wednesday",
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.504972770728!2d77.123193!3d28.644595000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03001bbfcd39%3A0x89ce02d6723ebbe!2sSamye%20Tibetan%20Traditional%20Medical%20Centre!5e0!3m2!1sen!2sin!4v1782227698091!5m2!1sen!2sin",
