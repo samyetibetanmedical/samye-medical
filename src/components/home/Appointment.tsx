@@ -119,10 +119,10 @@ const Appointment = () => {
   return (
     <div id="book-appointment" className="pt-15">
       <Container className="md:px-5">
-        <Heading as="h2">Schedule an Appointment</Heading>
+        <Heading as="h2">Book an Appointment</Heading>
 
         <SubHeading className="mt-3">
-          Connect with our experienced Tibetan medicine practitioners and
+          Connect with our experienced doctors and
           receive personalized guidance for your health and wellness needs.
         </SubHeading>
 
