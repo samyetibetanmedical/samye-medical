@@ -61,8 +61,7 @@ export const locations = [
   },
   {
     state: "Arunachal Pradesh",
-    address:
-      "5/1, near post office, Banderdawa, Arunachal Pradesh 791123",
+    address: "5/1, near post office, Banderdawa, Arunachal Pradesh 791123",
     contact: "+91 9707942039",
     consultation: "Monday to Sunday, Closed Wednesday",
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.510645209526!2d93.8242643!3d27.1087217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3746aba9d47fce0b%3A0x22fad227ccd52ab0!2sSamye%20Tibetan%20Traditional%20Medical%20Treatment%20Centre!5e0!3m2!1sen!2sin!4v1782227761132!5m2!1sen!2sin",
@@ -71,22 +70,21 @@ export const locations = [
 
 export const doctors = [
   { id: 1, docName: "Dr. Lhamo Dolma (BSRMS)", imgSrc: "/assets/doc-1.jpeg" },
-  { id: 2, docName: "Dr. Shawo (BSRMS)", imgSrc: "/assets/doc-5.avif" },
+  { id: 2, docName: "Dr. Karma (BSRMS)", imgSrc: "/assets/doc-4.jpeg" },
   {
     id: 3,
-    docName: "Dr. Rinzin Tsewang. (BSRMS)",
-    imgSrc: "/assets/doc-4.jpeg",
+    docName: "Dr. Tashi Choetso (BSRMS)",
+    imgSrc: "/assets/doc-5.jpeg",
   },
-  { id: 4, docName: "Dr. Dorje Dakpa (BSRMS)", imgSrc: "/assets/doc-6.avif" },
-  { id: 5, docName: "Dr. Prema Wangmo (BSRMS)", imgSrc: "/assets/doc-3.jpeg" },
+  { id: 4, docName: "Dr. Prema Wangmo (BSRMS)", imgSrc: "/assets/doc-3.jpeg" },
   {
-    id: 6,
+    id: 5,
     docName: "Dr. Thupten Rabgyal (BSRSMS)",
     imgSrc: "/assets/doc-2.avif",
   },
-  { id: 7, docName: "Dr. Jigme Chokey (BSRSMS)", imgSrc: "/assets/doc-7.jpeg" },
+  { id: 6, docName: "Dr. Jigme Chokey (BSRSMS)", imgSrc: "/assets/doc-7.jpeg" },
   {
-    id: 8,
+    id: 7,
     docName: "Dr. Rinchen Dhondup (BSRSMS)",
     imgSrc: "/assets/doc-8.jpeg",
   },
